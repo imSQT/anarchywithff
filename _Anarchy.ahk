@@ -1611,10 +1611,10 @@ loop
 				goto, aftergame
 			}
 
-			if ingametime_m>=15
+			if ingametime_m=15 or ingametime_m=18 or ingametime_m=21 or ingametime_m=24 or ingametime_m=27
 			{
 				%PickedChampion%Surrender()
-				sleep 180000
+				;sleep 180000 ;this might make the function last 3 min so im taking it out
 			}
 
 			if ingametime_m>=20
